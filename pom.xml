@@ -331,6 +331,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>checker-framework</module>
@@ -355,7 +356,6 @@
                 <!-- <module>grails</module> --> <!-- Not a maven project -->
                 <!-- <module>guest</module> --> <!-- not to be built as its for guest articles  -->
 
-                <module>jetbrains</module>
                 <!-- <module>lagom</module> --> <!-- Not a maven project -->
                 <module>language-interop</module>
 
@@ -409,6 +409,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>spring-4</module>
@@ -425,7 +426,6 @@
                 <module>spring-swagger-codegen</module>
                 <module>spring-web-modules</module>
                 <module>spring-websockets</module>
-                <module>static-analysis</module>
                 <module>testing-modules</module>
                 <module>video-tutorials</module>
                 <module>xml</module>
@@ -469,6 +469,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>apache-spark</module>
@@ -477,7 +478,6 @@
 
                 <module>jenkins-modules</module>
                 <module>jhipster-modules</module>
-                <module>jws</module>
             </modules>
         </profile>
 
@@ -511,6 +511,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>checker-framework</module>
@@ -579,6 +580,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>spring-4</module>
@@ -595,7 +597,6 @@
                 <module>spring-swagger-codegen</module>
                 <module>spring-web-modules</module>
                 <module>spring-websockets</module>
-                <module>static-analysis</module>
                 <module>testing-modules</module>
                 <module>video-tutorials</module>
                 <module>xml</module>
@@ -631,6 +632,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
 
                 <module>apache-spark</module>
@@ -639,7 +641,6 @@
 
                 <module>jenkins-modules</module>
                 <module>jhipster-modules</module>
-                <module>jws</module>
             </modules>
 
         </profile>
@@ -797,6 +798,7 @@
                 <module>spring-reactive-modules</module>
                 <module>spring-swagger-codegen/custom-validations-opeanpi-codegen</module>
                 <module>testing-modules/testing-assertions</module>
+                <module>testing-modules/mockito-simple</module>
                 <module>persistence-modules/fauna</module>
                 <module>persistence-modules/spring-data-rest</module>
 
@@ -808,6 +810,8 @@
                 <module>lightrun</module>
                 <module>tablesaw</module>
                 <module>geotools</module>
+
+                <module>jws</module>
 
                 <!-- Modules from default-first -->
 
@@ -850,6 +854,7 @@
                 <module>javaxval</module>
                 <module>javaxval-2</module>
                 <module>javax-validation-advanced</module>
+                <module>jetbrains</module>
                 <module>jgit</module>
                 <module>jib</module>
 
@@ -895,6 +900,7 @@
                 <module>spring-5-webflux</module>
                 <module>spring-5-webflux-2</module>
                 <module>spring-activiti</module>
+                <module>spring-actuator</module>
                 <module>spring-core-2</module>
                 <module>spring-core-3</module>
                 <module>spring-credhub</module>
@@ -913,6 +919,7 @@
                 <module>spring-state-machine</module>
                 <module>spring-threads</module>
 				<module>spring-vault</module>
+                <module>static-analysis</module>
                 <module>tensorflow-java</module>
                 <module>vertx-modules</module>
                 <module>xstream</module>
@@ -1050,6 +1057,7 @@
                 <module>spring-reactive-modules</module>
                 <module>spring-swagger-codegen/custom-validations-opeanpi-codegen</module>
                 <module>testing-modules/testing-assertions</module>
+                <module>testing-modules/mockito-simple</module>
                 <module>persistence-modules/fauna</module>
                 <module>persistence-modules/spring-data-rest</module>
 
@@ -1061,6 +1069,8 @@
                 <module>lightrun</module>
                 <module>tablesaw</module>
                 <module>geotools</module>
+
+                <module>jws</module>
 
                 <!-- Modules from default-first -->
 
@@ -1104,6 +1114,7 @@
                 <module>javaxval</module>
                 <module>javaxval-2</module>
                 <module>javax-validation-advanced</module>
+                <module>jetbrains</module>
                 <module>jgit</module>
                 <module>jib</module>
 
@@ -1167,6 +1178,7 @@
                 <module>spring-state-machine</module>
                 <module>spring-threads</module>
 				<module>spring-vault</module>
+                <module>static-analysis</module>
                 <module>tensorflow-java</module>
                 <module>vertx-modules</module>
                 <module>xstream</module>
@@ -1196,6 +1208,7 @@
                 <module>parent-boot-2</module>
                 <module>parent-spring-4</module>
                 <module>parent-spring-5</module>
+                <module>parent-spring-6</module>
                 <module>parent-java</module>
             </modules>
 
