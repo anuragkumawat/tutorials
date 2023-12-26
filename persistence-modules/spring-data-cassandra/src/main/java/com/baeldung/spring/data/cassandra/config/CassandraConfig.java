@@ -7,10 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
-import org.springframework.data.cassandra.config.CassandraClusterFactoryBean;
-import org.springframework.data.cassandra.config.java.AbstractCassandraConfiguration;
-import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
-import org.springframework.data.cassandra.mapping.CassandraMappingContext;
+import org.springframework.data.cassandra.config.AbstractCassandraConfiguration;
+import org.springframework.data.cassandra.core.mapping.BasicCassandraMappingContext;
+import org.springframework.data.cassandra.core.mapping.CassandraMappingContext;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
 @Configuration
@@ -26,17 +25,17 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     protected String getKeyspaceName() {
         return environment.getProperty("cassandra.keyspace");
     }
-
+    
     @Override
-    @Bean
-    public CassandraClusterFactoryBean cluster() {
-        final CassandraClusterFactoryBean cluster = new CassandraClusterFactoryBean();
-        cluster.setContactPoints(environment.getProperty("cassandra.contactpoints"));
-        cluster.setPort(Integer.parseInt(environment.getProperty("cassandra.port")));
-        LOGGER.info("Cluster created with contact points [" + environment.getProperty("cassandra.contactpoints") + "] " + "& port [" + Integer.parseInt(environment.getProperty("cassandra.port")) + "].");
-        return cluster;
+    public String getContactPoints() {
+      return environment.getProperty("cassandra.contactpoints");
     }
 
+    @Override
+    public int getPort() {
+      return Integer.parseInt(environment.getProperty("cassandra.port"));
+    }
+    
     @Override
     @Bean
     public CassandraMappingContext cassandraMapping() throws ClassNotFoundException {
