@@ -34,34 +34,20 @@
             <artifactId>cassandra-unit-spring</artifactId>
             <version>${cassandra-unit.version}</version>
             <scope>test</scope>
-            <exclusions>
+            <!--<exclusions>
                 <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
+                    <groupId>org.cassandraunit</groupId>
+                    <artifactId>cassandra-unit</artifactId>
                 </exclusion>
-                <exclusion>
-                    <groupId>org.hibernate</groupId>
-                    <artifactId>hibernate-validator</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.httpcomponents</groupId>
-                    <artifactId>httpclient</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-codec</groupId>
-                    <artifactId>commons-codec</artifactId>
-                </exclusion>
-            </exclusions>
+            </exclusions>-->
         </dependency>
-          <!-- <dependency>
+         <dependency>
+            <groupId>org.cassandraunit</groupId>
+            <artifactId>cassandra-unit</artifactId>
+            <version>${cassandra-unit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!--<dependency>
             <groupId>org.cassandraunit</groupId>
             <artifactId>cassandra-unit-shaded</artifactId>
             <version>${cassandra-unit.version}</version>
@@ -86,17 +72,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--<dependency>
-            <groupId>org.testcontainers</groupId>
-            <artifactId>cassandra</artifactId>
-            <version>${cassandra-testcontainer.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-transport</artifactId>
-            <version>${netty-transport.version}</version>
-        </dependency>-->
+            <groupId>com.datastax.oss</groupId>
+            <artifactId>java-driver-core</artifactId>
+            <version>${java-driver.version}</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -104,7 +84,7 @@
         <cassandra-unit.version>4.3.1.0</cassandra-unit.version>
         <cassandra-testcontainer.version>1.19.3</cassandra-testcontainer.version>
         <hector-core.version>2.0-0</hector-core.version>
-        <netty-transport.version>4.1.72.Final</netty-transport.version>
+        <java-driver.version>4.13.0</java-driver.version>
     </properties>
 
 </project>
