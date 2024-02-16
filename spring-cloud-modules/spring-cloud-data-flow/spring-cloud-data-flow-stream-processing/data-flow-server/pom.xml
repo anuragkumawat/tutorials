@@ -30,24 +30,23 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-dataflow-server-local</artifactId>
-            <version>1.7.4.RELEASE</version>
+            <artifactId>spring-cloud-dataflow-server</artifactId>
+            <version>2.11.2</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.compatible.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <version>${hibernate.compatible.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
             <version>${byte-buddy.version}</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -61,9 +60,9 @@
     </dependencies>
 
     <properties>
-        <spring-cloud-dataflow-dependencies.version>2.0.0.RELEASE</spring-cloud-dataflow-dependencies.version>
+        <spring-cloud-dataflow-dependencies.version>2.11.2</spring-cloud-dataflow-dependencies.version>
         <hibernate.compatible.version>5.6.0.Final</hibernate.compatible.version>
-        <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.7.11</spring-boot.version>
         <groovy.version>3.0.8</groovy.version>
     </properties>
 
