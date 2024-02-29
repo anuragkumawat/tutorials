@@ -36,10 +36,12 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+           <version>3.0.12</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
+            <version>3.4.1</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -93,7 +95,9 @@
     <properties>
         <spring-boot-starter-actuator.version>3.0.5</spring-boot-starter-actuator.version>
         <micrometer-registry-prometheus.version>1.10.5</micrometer-registry-prometheus.version>
-        <testcontainers-kafka.version>1.19.3</testcontainers-kafka.version>
+        <testcontainers-kafka.version>1.19.6</testcontainers-kafka.version>
+        <spring-boot.version>3.2.2</spring-boot.version>
+        <junit-jupiter.version>5.10.2</junit-jupiter.version>
     </properties>
 
 </project>
